@@ -1,36 +1,36 @@
-import { addBookHandler, getAllBooksHandler, getBookByIdHandler, editBookByIdHandler, deleteBookByIdHandler } from "./handler.js";
+import { addBookHandler, getAllBooksHandler, getBookByIdHandler, editBookByIdHandler, deleteBookByIdHandler } from './handler.js'
 
 const routes = [
   {
     // menyimpan buku
-    method: "POST",
-    path: "/books",
-    handler: addBookHandler,
+    method: 'POST',
+    path: '/books',
+    handler: addBookHandler
   },
   {
     // menampilkan seluruh buku
-    method: "GET",
-    path: "/books",
-    handler: getAllBooksHandler,
+    method: 'GET',
+    path: '/books',
+    handler: getAllBooksHandler
   },
   {
     // menampilkan detail buku
-    method: "GET",
-    path: "/books/{bookId}",
-    handler: getBookByIdHandler,
+    method: 'GET',
+    path: '/books/{bookId}',
+    handler: getBookByIdHandler
   },
   {
     // mengubah data buku
-    method: "PUT",
-    path: "/books/{bookId}",
-    handler: editBookByIdHandler,
+    method: 'PUT',
+    path: '/books/{bookId}',
+    handler: editBookByIdHandler
   },
   {
     // menghapus buku
-    method: "DELETE",
-    path: "/books/{bookId}",
-    handler: deleteBookByIdHandler,
+    method: 'DELETE',
+    path: '/books/{bookId}',
+    handler: deleteBookByIdHandler
   }
-];
+]
 
-export default routes;
+export default routes
